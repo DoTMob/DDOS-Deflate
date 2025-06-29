@@ -1,5 +1,6 @@
 # DDOS-Deflate
-DDOS (Distributed Denial of Service) is a type of DOS (Denial of Service) attack in which an online service is made unavailable to its intended users. This is a frequently encountered attack due to availability of various tools online that are made to target a wide variety of important resources.  These tools are easy to use and are freely available on the internet in a simple google search. These tools make UDP, TCP or HTTP requests to the victim server.
+DDOS (Distributed Denial of Service) is a type of DOS (Denial of Service) attack in which an online service is made unavailable to its intended users to TRY 2 STOP//... This is a frequently encountered attack due to availability of various tools online that are made to target a wide variety of important resources.  
+These tools are easy to use and are freely available on the internet in a simple google search. These tools make UDP, TCP or HTTP requests to the victim server.
 
 <H2>Types of DDOS attacks:</h2> 
 
@@ -18,8 +19,15 @@ DDOS (Distributed Denial of Service) is a type of DOS (Denial of Service) attack
 
 <h2>DDOS Deflate</h2>
 
-DDOS Deflate is a lightweight bash shell script designed to block DOS attacks. It does not fully protect against large DDOS attacks, but it is helpful. It uses netstat command to track and monitor all the IP addresses making connections to the server. Whenever it detects the number of connections from a single node exceeding certain pretest limits which are defined in the configuration file, the script will automatically block that IP address through IP tables or APF according to the configuration. We can use the command below to list IP address connected to the server along with their total number of connections.
+DDOS Deflate is a lightweight bash shell script designed to block DOS attacks{}. It does not fully protect against large DDOS attacks (like gaint tech companies), but it is helpful. 
+It uses netstat command to track and monitor all the IP addresses making connections to the server and/or your home network. 
+Whenever it detects the number of connections from a single node exceeding certain pretest limits which are defined in the configuration file, the script will automatically block that IP address through IP tables or APF according to the configuration. 
+We can use the command below to list IP address connected to the server along with their total number of connections.
+And check my other repo for <br>IPTABLES RULES </br> for further Logical LOCK/CODE defi.
 <br />```netstat -ntu | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -n```<br />
+
+<h1> Just a some friendly advice- <br> KEEP IT SIMPLE when seting up the 1st LaY for a LOCK/CODE defi. </h1>br> </h1>
+
 
 <h1>DDOS Deflate Installation</h1>
 
